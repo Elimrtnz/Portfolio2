@@ -9,7 +9,9 @@ function bootstrap_scripts()
 	//  enqueue the script:
 	wp_enqueue_script( 'bootstrap-script' );
 	wp_enqueue_script( 'hover-script' );
-	wp_enqueue_script( 'main-script' );
+	//wp_enqueue_script( 'main-script' );
+	wp_enqueue_script( 'main-script', get_template_directory_uri() . '/js/script.js', array ( 'jquery' ), 1.4, true);
+
 }
 add_action( 'wp_enqueue_scripts', 'bootstrap_scripts' );
 
