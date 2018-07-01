@@ -302,3 +302,31 @@ bt { font-size: 12px; }
 .slick-arrow.slick-hidden {
     display: none;
 }
+ul.slick-dots {
+    position: absolute;
+    bottom: 10px;
+    left:0;
+    width: 100%;
+    text-align: center;
+}
+ul.slick-dots li {
+    display: inline-block;
+    margin-right: 10px;
+}
+ul.slick-dots li:last-child {
+    margin-right: 0px;
+}
+
+ul.slick-dots li button {
+    font-size: 0px;
+    line-height: 0px;
+    height: 15px;
+    width: 15px;
+    background: #000000;
+    border: 2px solid red;
+    border-radius: 50%;
+}
+ul.slick-dots .slick-active button {
+    background: red;
+    border: 2px solid #000000;
+}

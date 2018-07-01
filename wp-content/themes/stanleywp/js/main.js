@@ -67,6 +67,8 @@ jQuery(window).load(function() {
         jQuery('.slickslider ul.slides').slick({
           //autoplay: true,
           //autoplaySpeed: 2000,
+          arrows: false,
+          dots: true,
         });
     }
 
