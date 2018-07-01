@@ -37,6 +37,52 @@
   </div>
   <?php wp_reset_query(); ?>
 
+  <div id="ww">
+  	<div class="container">
+
+  		<div class="row about">
+  			<div class="col-xs-12">
+  				<h2><?php the_field('about_title'); ?></h2>
+  				<?php the_field('about_content'); ?>
+  			</div><!-- /col -->
+  		</div><!-- /row -->
+
+  		
+
+  		<div class="row services">
+
+  			<div class="col-xs-12 col-md-4 service">
+  				<div class="icon">
+  					<i class="fa fa-wordpress"></i>
+  				</div>
+  				<div class="content">
+  					<?php the_field('service_1'); ?>
+  				</div>
+  			</div><!-- /col -->
+  			<div class="col-xs-12 col-md-4 service">
+  				<div class="icon">
+  					<i class="fa fa-code"></i>
+  				</div>
+  				<div class="content">
+  					<?php the_field('service_2'); ?>
+  				</div>
+  			</div><!-- /col -->
+  			<div class="col-xs-12 col-md-4 service">
+  				<div class="icon">
+  					<i class="fa fa-html5"></i>
+  				</div>
+  				<div class="content">
+  					<?php the_field('service_3'); ?>
+  				</div>
+  			</div><!-- /col -->
+
+
+  		</div><!-- /row -->
+
+
+
+  	</div> <!-- /container -->
+  </div><!-- /ww -->
 
 
 
