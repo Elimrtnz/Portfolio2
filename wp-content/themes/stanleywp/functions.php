@@ -42,3 +42,22 @@ define( 'RWMB_DIR', trailingslashit( TEMPLATEPATH . '/functions/meta-box' ) );
 // Include the meta box script
 require_once RWMB_DIR . 'meta-box.php';
 require_once RWMB_DIR . 'setup.php';
+
+
+// custom post types here
+
+
+add_action('init', 'ready_slider_images');
+function ready_slider_images () {
+  $args = array(
+    'label' => __('Slider Images', 'ReadyArtwork' ),
+    'singular_label' => __('Slider Image', 'ReadyArtwork' ),
+    'public' => false,
+    'show_ui' => true,
+    'capability_type' => 'page',
+    'hierarchical' => false,
+    'rewrite' => false,		
+    'supports' => array('title','thumbnail' , 'page-attributes')
+    );
+  register_post_type('slider_images',$args);
+}
