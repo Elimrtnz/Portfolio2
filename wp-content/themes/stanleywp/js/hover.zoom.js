@@ -23,12 +23,12 @@
                 image.load(function() {
                     
                     if(s.overlay === true) {
-                        $(this).parent().append('<div class="zoomOverlay" />');
-                        $(this).parent().find('.zoomOverlay').css({
-                            opacity:0, 
-                            display: 'block', 
-                            backgroundColor: s.overlayColor
-                        }); 
+                        // //$(this).parent().append('<div class="zoomOverlay" />');
+                        // $(this).parent().find('.zoomOverlay').css({
+                        //     opacity:0, 
+                        //     display: 'block', 
+                        //     backgroundColor: s.overlayColor
+                        // }); 
                     }
                 
                     var width = $(this).width();

@@ -38,18 +38,18 @@
   <?php wp_reset_query(); ?>
 
   <div id="ww">
-  	<div class="container">
-
-  		<div class="row about">
+  	<div class="container about">
+  		<div class="row">
   			<div class="col-xs-12">
   				<h2><?php the_field('about_title'); ?></h2>
   				<?php the_field('about_content'); ?>
   			</div><!-- /col -->
   		</div><!-- /row -->
+  	</div> <!-- /container -->
 
   		
-
-  		<div class="row services">
+  	<div class="container services">
+  		<div class="row">
 
   			<div class="col-xs-12 col-md-4 service">
   				<div class="icon">
@@ -84,6 +84,23 @@
   	</div> <!-- /container -->
   </div><!-- /ww -->
 
+  <?php $newsIimage = get_field('newsletter_image'); ?>
+  <div class="news-background flexbox align-items-center" style="background: url( <?php echo $newsIimage['url']; ?>) no-repeat; background-size: cover;">
+  	<div class="overlay"></div>
+  	<div class="container newsletter">
+  		<div class="row ">
+  			<div class="col-xs-12 ">
+  				<h3><?php the_field('newsletter_title'); ?></h3>
+  				<div class="content">
+  					<?php the_field('newsletter_content'); ?>
+  				</div>
+  				<div class="code">
+  					<?php the_field('news_code'); ?>
+  				</div>
+  			</div><!-- /col -->
+  		</div><!-- /row -->
+  	</div> <!-- /container -->
+  </div>
 
 
 <?php get_footer(); ?>

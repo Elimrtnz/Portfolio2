@@ -78,7 +78,7 @@ hr {
 
 .navbar { margin-bottom: 0px; text-transform: uppercase; }
 
-.navbar-inverse { padding-bottom: 70px; padding-top: 70px; }
+.navbar-inverse { padding-bottom: 45px; padding-top: 45px; }
 
 .navbar-inverse { background-color: #1abc9c; border-color: #16a085; }
 
@@ -329,4 +329,75 @@ ul.slick-dots li button {
 ul.slick-dots .slick-active button {
     background: red;
     border: 2px solid #000000;
+}
+
+/* ninja Forms */
+
+.news-background {
+    min-height: 400px; 
+    position: relative;
+}
+.news-background .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #404040;
+    opacity: 0.7;
+}
+.newsletter {
+    text-align: center;
+}
+.newsletter h3 {
+    color: #ffffff;
+}
+.newsletter {
+    color: #ffffff;
+}
+.news-background div.nf-before-form-content {
+    display: none;
+}
+.news-background div.nf-after-form-content {
+    display: none;
+}
+.nf-form-content {
+    max-width: 500px;
+    margin: 0 auto;
+}
+.nf-field-label {
+    display: none;
+}
+.newsletter .nf-form-content input[type=button] {
+    border: 2px solid red;
+    background: #000000;
+    color: red;
+    text-transform: uppercase;
+    width: 100px;
+    height: 40px;
+    font-weight: 700;
+}
+.newsletter .nf-form-content input[type=button]:hover {
+    border: 2px solid black;
+    background: red;
+    color: black;
+}
+
+
+
+/* Flex Bbox */
+
+.flexbox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.align-items-center {
+    webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
 }
