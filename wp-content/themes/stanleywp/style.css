@@ -384,6 +384,13 @@ ul.slick-dots .slick-active button {
 }
 
 
+.container.services {
+    text-align: center;
+}
+.service .fa {
+    font-size: 50px;
+}
+
 
 /* Flex Bbox */
 
