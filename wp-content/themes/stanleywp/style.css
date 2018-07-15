@@ -35,6 +35,10 @@ h1, h2, h3, h4, h5, h6 { color: #333; font-family: 'Montserrat', sans-serif; fon
 
 h1 { font-size: 35px; margin-bottom: 30px; margin-top: 30px; }
 
+@media (min-width: 768px) {
+    h1 { font-size: 70px; margin-bottom: 30px; margin-top: 30px; }
+}
+
 .author-avatar img { -webkit-border-radius: 95px; -moz-border-radius: 95px; border-radius: 95px; }
 
 
@@ -391,8 +395,7 @@ ul.slick-dots .slick-active button {
     font-size: 50px;
 }
 
-
-/* Flex Bbox */
+/* Flex Box */
 
 .flexbox {
   display: -webkit-box;
@@ -407,4 +410,57 @@ ul.slick-dots .slick-active button {
     -moz-align-items: center;
     -ms-align-items: center;
     align-items: center;
+}
+
+.justify-content-center {
+    webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+}
+
+.flex-align-justify-center {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+}
+
+
+
+
+/* Page Banner */
+.page-banner {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 150px;
+}
+.page-banner .title h1 {
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+
+@media (min-width: 768px) {
+    .page-banner {
+        min-height: 200px;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .page-banner {
+        min-height: 300px;
+    }
+
 }
