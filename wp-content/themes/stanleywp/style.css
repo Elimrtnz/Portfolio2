@@ -24,7 +24,8 @@ body {
 	-webkit-overflow-scrolling: touch;
 	-webkit-font-smoothing: antialiased;
 	background-color: #ffffff;
-	color: #555;
+	/*color: #555;*/
+    color: #000000;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 14px;
 	font-weight: 400;
@@ -79,18 +80,44 @@ hr {
 	padding: 0;
 }
 
+/* Heading Fonts */
+.marker {
+    color: black;
+    font-family: 'Permanent Marker', cursive;
+    text-shadow: 1px 1px #ff0000;
+    position: relative;
+    display: inline-block;
+}
+.marker:after {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 3px;
+    content: '';
+    /*background: #ff0000;*/
+    background: #000000;
+    left: 0;
+    bottom: 0;
+    margin: 10px 0;
+}
+
+
 
 .navbar { margin-bottom: 0px; text-transform: uppercase; }
 
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #ff0000;
+}
+
 .navbar-inverse { padding-bottom: 45px; padding-top: 45px; }
 
-.navbar-inverse { background-color: background-color: #222222; border-color:#ff0000; }
+.navbar-inverse { background-color: background-color: #222222; }
 
-.navbar-inverse .navbar-nav > li > a { color: white; }
+.navbar-inverse .navbar-nav > li > a { color: white; font-family: 'Montserrat',sans-serif; font-weight: 700; }
 
 .navbar-inverse .navbar-nav > li > a:hover { color: #ff0000; }
 
-.navbar-brand { font-size: 20px; font-weight: 700; letter-spacing: 2px; }
+.navbar-brand { font-size: 20px; font-weight: 700; letter-spacing: 2px; font-family: "Kaushan Script", sans-serif; }
 
 .navbar-inverse .navbar-brand { color: #ff0000; }
 
@@ -343,6 +370,91 @@ ul.slick-dots .slick-active button {
     border: 2px solid #000000;
 }
 
+
+/* Home Projects */
+
+.projects-home {
+    background-color: #222222;
+    min-height: 200px;
+    padding: 25px 0;
+    text-align: center;
+}
+
+.projects-home .content p {
+    color: #ffffff;
+}
+
+.button.red-button {
+    border: 2px solid red;
+    background: #000000;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    margin: 0 auto;
+}
+.button.red-button:hover {
+    border: 2px solid #000000;
+    background: #ff0000;
+}
+
+.button.red-button p {
+    color: #ff0000;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 50px;
+    margin: 0;
+}
+
+.button.red-button:hover p a {
+    color: #000000;
+}
+
+
+@media (min-width: 768px) {
+
+    .projects-home {
+       display: -webkit-box;
+       display: -moz-box;
+       display: -webkit-flex;
+       display: -ms-flexbox;
+       display: flex;
+       webkit-align-items: center;
+       -moz-align-items: center;
+       -ms-align-items: center;
+       align-items: center;
+       text-align: left;
+   }
+   .projects-home .col-xs-12 {
+       display: -webkit-box;
+       display: -moz-box;
+       display: -webkit-flex;
+       display: -ms-flexbox;
+       display: flex;
+       webkit-align-items: center;
+       -moz-align-items: center;
+       -ms-align-items: center;
+       align-items: center;
+   }
+
+   .projects-home .content  {
+        width: 70%;
+    }
+    .projects-home .button-container  {
+        width: 30%;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        webkit-justify-content: center;
+        -moz-justify-content: center;
+        -ms-justify-content: center;
+        justify-content: center;
+    }
+
+}
+
+
 /* ninja Forms */
 
 .news-background {
@@ -396,7 +508,7 @@ ul.slick-dots .slick-active button {
 }
 
 
-.container.services {
+.container.services .service {
     text-align: center;
 }
 .service .fa {

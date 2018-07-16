@@ -41,6 +41,8 @@
 <?php wp_head(); ?> 
 
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
 
 </head>
 

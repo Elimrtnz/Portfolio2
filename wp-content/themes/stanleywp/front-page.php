@@ -41,14 +41,33 @@
   	<div class="container about">
   		<div class="row">
   			<div class="col-xs-12">
-  				<h2><?php the_field('about_title'); ?></h2>
+  				<h2 class="marker"><?php the_field('about_title'); ?></h2>
   				<?php the_field('about_content'); ?>
   			</div><!-- /col -->
   		</div><!-- /row -->
   	</div> <!-- /container -->
 
+  	<div class="projects-home ">
+  		<div class="container">
+  			<div class="row">
+  				<div class="col-xs-12">
+  					<div class="content">
+  						<?php the_field('projects_content'); ?>
+  					</div>
+  					<div class="button-container">
+  						<div class="button red-button">
+  							<?php the_field('projects_button'); ?>
+  						</div>
+  					</div>
+
+  				</div><!-- /col -->
+  			</div><!-- /row -->
+  		</div> <!-- /container -->
+  	</div>
+
   		
   	<div class="container services">
+  		<h2 class="marker"><?php the_field('service_title'); ?></h2>
   		<div class="row">
 
   			<div class="col-xs-12 col-md-4 service">
