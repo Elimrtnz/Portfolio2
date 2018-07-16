@@ -384,7 +384,8 @@ ul.slick-dots .slick-active button {
     color: #ffffff;
 }
 
-.button.red-button {
+.button.red-button p a {
+    display: inline-block;
     border: 2px solid red;
     background: #000000;
     width: 200px;
@@ -392,7 +393,7 @@ ul.slick-dots .slick-active button {
     text-align: center;
     margin: 0 auto;
 }
-.button.red-button:hover {
+.button.red-button:hover p a {
     border: 2px solid #000000;
     background: #ff0000;
 }
