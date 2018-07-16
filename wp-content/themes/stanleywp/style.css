@@ -84,21 +84,29 @@ hr {
 
 .navbar-inverse { padding-bottom: 45px; padding-top: 45px; }
 
-.navbar-inverse { background-color: #1abc9c; border-color: #16a085; }
+.navbar-inverse { background-color: background-color: #222222; border-color:#ff0000; }
 
 .navbar-inverse .navbar-nav > li > a { color: white; }
 
-.navbar-inverse .navbar-nav > li > a:hover { color: #222222; }
+.navbar-inverse .navbar-nav > li > a:hover { color: #ff0000; }
 
 .navbar-brand { font-size: 20px; font-weight: 700; letter-spacing: 2px; }
 
-.navbar-inverse .navbar-brand { color: white; }
+.navbar-inverse .navbar-brand { color: #ff0000; }
 
 .navbar-inverse .navbar-toggle { border-color: transparent; }
 
-.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover { background-color: transparent; color: #222222; }
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a { background-color: #ff0000; color: #222222; }
 
-.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus { background-color: transparent; color: #222222; }
+.navbar-inverse .navbar-nav>.active>a:hover { background-color:   #ff0000; color: #ffffff; }
+
+@media (min-width: 768px){
+  .navbar-inverse .navbar-nav>.active>a {
+    border-radius: 3px;
+  }  
+}
+
+/* .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus { background-color: transparent; color: #222222; } */
 
 .progress-bar-theme { background-color: #1abc9c; }
 
