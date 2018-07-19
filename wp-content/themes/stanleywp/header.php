@@ -56,6 +56,17 @@
    
     <?php gents_in_header(); // header hook ?>
 
+
+<?php $headerId = get_page_by_path('header-options'); ?>
+
+<div class="super-nav">
+  <div class="container">
+    <div class="email">
+      <?php the_field('email',$headerId );?>
+    </div>
+  </div>
+</div>
+
 <nav role="navigation">
     <div class="navbar navbar-inverse navbar-static-top">
         <div class="container">
