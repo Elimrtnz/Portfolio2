@@ -59,9 +59,12 @@
 
 <?php $headerId = get_page_by_path('header-options'); ?>
 
-<div class="super-nav">
-  <div class="container">
-    <div class="email">
+<div class="super-nav flexbox">
+  <div class="container flexbox justify-content-end">
+    <div class="email flexbox align-items-center">
+      <div class="icon">
+        <i class="fa fa-envelope"></i>
+      </div>
       <?php the_field('email',$headerId );?>
     </div>
   </div>
