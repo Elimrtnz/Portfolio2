@@ -383,6 +383,9 @@ ul.slick-dots li {
     display: inline-block;
     margin-right: 10px;
 }
+ul.slick-dots li button:focus {
+    outline: none;
+}
 ul.slick-dots li:last-child {
     margin-right: 0px;
 }
@@ -524,6 +527,19 @@ ul.slick-dots .slick-active button {
 .nf-field-label {
     display: none;
 }
+.newsletter .nf-form-content input[type=email] {
+    border: 2px solid red;
+    background: #000000;
+    color: red;
+    height: 50px;
+    padding: 0 20px;
+}
+.newsletter .nf-form-content input[type=email]:focus {
+    outline: none;
+}
+.newsletter .nf-form-content input::placeholder {
+    color: #ff0000;
+}
 .newsletter .nf-form-content input[type=button] {
     border: 2px solid red;
     background: #000000;
@@ -631,21 +647,43 @@ ul.slick-dots .slick-active button {
 .contact-page h2 {
     color: black;
 }
+.contact-page .content p {
+    color: #ffffff;
+}
 .contact-form .nf-form-fields-required {
     display: none;
 }
 .contact-form .nf-form-content input[type=button] {
     border: 2px solid red;
     background: #000000;
-    color: red;
+    color: #ff0000;
     text-transform: uppercase;
     width: 100px;
     height: 40px;
     font-weight: 700;
 }
 
+.contact-form .nf-form-content input, textarea {
+    color: #ff0000;
+    height: 50px;
+    background: transparent;
+    border: 1px solid #000000;
+}
 .contact-form .nf-form-content input {
-    border: #000000;
+    padding: 0 20px;
+}
+.contact-form .nf-form-content input:focus {
+    outline: none;
+    border: 2px solid red;
+    background: #000000;
+}
+.contact-form .nf-form-content input::placeholder, .contact-form .nf-form-content textarea::placeholder {
+    color: #ff0000;
+    font-weight: 700;
+}
+.contact-form .nf-form-content textarea:focus {
+    background: #000000;
+    border: 2px solid red;
 }
 
 .contact-form .nf-form-content input[type=button]:hover {

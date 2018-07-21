@@ -25,7 +25,7 @@
 	<div class="container contact-content">
 		<div class="row">
 			<div class="col-xs-12">
-				<h2><?php the_field('heading'); ?></h2>
+				<h2 class="marker"><?php the_field('heading'); ?></h2>
 				<div class="content">
 					<?php the_field('content'); ?>
 				</div>
