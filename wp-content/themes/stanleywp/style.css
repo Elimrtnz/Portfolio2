@@ -623,6 +623,7 @@ ul.slick-dots .slick-active button {
 .page-banner .title h1 {
     color: #ffffff;
     text-transform: uppercase;
+    text-shadow: 3px 3px #000000;
 }
 
 
@@ -667,7 +668,7 @@ ul.slick-dots .slick-active button {
     color: #ff0000;
     height: 50px;
     background: transparent;
-    border: 1px solid #000000;
+    border: 2px solid #000000;
 }
 .contact-form .nf-form-content input {
     padding: 0 20px;
