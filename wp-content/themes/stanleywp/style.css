@@ -693,3 +693,19 @@ ul.slick-dots .slick-active button {
     color: black;
 }
 
+/* Portfolio */
+
+
+@media (min-width: 992px) {
+    .flex-container-two {
+     display: -webkit-box;
+     display: -moz-box;
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-flex-direction: row-reverse;
+     -moz-flex-direction: row-reverse;
+     -ms-flex-direction: row-reverse;
+     flex-direction: row-reverse;
+    }
+}

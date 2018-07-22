@@ -49,7 +49,7 @@
       <?php //flex second row and flex-direction column reverse ?>
       <?php $sectionTwoImage = get_field('section_2_image'); ?>
       <div class="row">
-       <div class="flex-container">
+       <div class="flex-container-two">
         <div class="col-xs-12 col-md-6">
           <img src="<?php echo $sectionTwoImage['url']; ?>">
         </div>
