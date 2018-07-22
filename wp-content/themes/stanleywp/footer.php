@@ -21,17 +21,20 @@
 
 
   <!-- +++++ Footer Section +++++ -->
-<footer id="footer">
-<div class="container">
-      <div class="row">
-        
-        <div class="col-xs-12">
-          <?php //dynamic_sidebar('footer-right'); ?>
-        </div>
-      
-      </div><!-- /row -->
-    </div><!-- /container -->
-</footer><!-- end #footer -->
+  <footer id="footer">
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-xs-12">
+  				<div class="icon">
+  					<a href="https://www.linkedin.com/in/EliasMartinezDev"><i class="fa fa-linkedin-square"></i></a>
+  				</div>
+  				<div class="icon">
+  					<a href="mailto:eliasmartinez.dev@gmail.com"><i class="fa fa-google"></i></a>
+  				</div>
+  			</div>
+  		</div><!-- /row -->
+  	</div><!-- /container -->
+  </footer><!-- end #footer -->
 
 
 
