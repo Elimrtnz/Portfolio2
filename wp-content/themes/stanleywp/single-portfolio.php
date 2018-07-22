@@ -22,37 +22,50 @@
  <?php while (have_posts()) : the_post(); ?>
 
 
- <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+   <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-  <!-- Portfolio Section -->
-  <div class="container pt">
-    <div class="row mt">
-     <div class="col-lg-6 col-lg-offset-3 centered">
 
-      <?php if( rwmb_meta( 'wtf_portfolio_top_title' ) !== '' ) { ?>
-      <?php echo rwmb_meta( 'wtf_portfolio_top_title' ); ?>
-      <hr>
-      <?php } ?> 
+    <!-- Portfolio Section -->
+    <div class="container pt">
 
-      <?php the_content(); ?>
+      <h1><?php the_title(); ?></h1>
 
+      <?php $sectionOneImage = get_field('section_1_image'); ?>
+      <div class="row pt">
+        <div class="flex-container">
+          <div class="col-xs-12 col-md-6">
+            <img src="<?php echo $sectionOneImage['url']; ?>">
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <div class="section-content">
+              <h2><?php the_field('section_1_title'); ?></h2>
+              <div class="content">
+                <?php the_field('section_1_content'); ?>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <?php //flex second row and flex-direction column reverse ?>
+      <?php $sectionTwoImage = get_field('section_2_image'); ?>
+      <div class="row">
+       <div class="flex-container">
+        <div class="col-xs-12 col-md-6">
+          <img src="<?php echo $sectionTwoImage['url']; ?>">
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div class="section-content">
+            <h2><?php the_field('section_2_title'); ?></h2>
+            <div class="content">
+              <?php the_field('section_2_content'); ?>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div><!-- row -->
-
-  <div class="row mt centered">  
-    <div class="col-lg-8 col-lg-offset-2">
-      <?php                           
-      $images = rwmb_meta( 'thickbox', 'type=image' );
-      foreach ( $images as $image ) { 
-        echo "<p><img class='img-responsive' src='{$image['full_url']}' alt='{$image['alt']}' /></p>";
-      } ?>
-      <?php if(rwmb_meta('wtf_port_cats') == 'value1') {?>
-      <p><bt><?php _e('Type','gents'); ?>: </span><?php echo get_the_term_list( get_the_ID(), 'portfolio_cats', '',', ',' ') ?></bt></p>
-       <?php } ?>
-    </div><!-- col-lg-8 -->
-  </div>
-</div><!-- container -->      
-</article><!-- end of #post-<?php the_ID(); ?> -->
+      
+    </div><!-- container -->      
+  </article><!-- end of #post-<?php the_ID(); ?> -->
 
 
 <?php endwhile; ?> 
