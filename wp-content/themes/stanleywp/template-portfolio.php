@@ -21,7 +21,7 @@
   </div>
 </div>
 
- <div class="container pt">
+ <div class="container pt portfolio">
 
   <div class="row mt">
     <div class="col-lg-6 col-lg-offset-3 centered">
@@ -59,7 +59,7 @@
   <?php endif; ?>
   
   <?php if(bi_get_data('project_title', '1')) {?>
-  <p><?php the_title(); ?></p>
+  <a href="<?php the_permalink(); ?>"><p><?php the_title(); ?></p></a>
   <?php } ?>
 </div> <!-- /col -->
 

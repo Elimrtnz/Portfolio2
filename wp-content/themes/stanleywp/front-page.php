@@ -104,7 +104,7 @@
   </div><!-- /ww -->
 
   <?php $newsIimage = get_field('newsletter_image'); ?>
-  <div class="news-background flexbox align-items-center" style="background: url( <?php echo $newsIimage['url']; ?>) no-repeat; background-size: cover;">
+  <div class="news-background flexbox align-items-center" style="background-image: url( <?php echo $newsIimage['url']; ?>); background-size: cover;">
   	<div class="overlay"></div>
   	<div class="container newsletter">
   		<div class="row ">

@@ -356,6 +356,7 @@ bt { font-size: 12px; }
 .slick-slide img
 {
     display: block;
+    width: 100%;
 }
 .slick-slide.slick-loading img
 {
@@ -507,6 +508,7 @@ ul.slick-dots .slick-active button {
 .news-background {
     min-height: 400px; 
     position: relative;
+    background-position: center;
 }
 .news-background .overlay {
     position: absolute;
@@ -636,6 +638,16 @@ ul.slick-dots .slick-active button {
     color: #ffffff;
     text-transform: uppercase;
     text-shadow: 3px 3px #000000;
+}
+
+.portfolio a p {
+    font-weight: 700;
+    font-size: 25px;
+    color: #000000;
+}
+
+.portfolio a p:hover {
+    color: #ff0000;
 }
 
 
