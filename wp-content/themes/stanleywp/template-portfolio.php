@@ -15,6 +15,12 @@
  ?>
  <?php get_header(); ?>
 
+ <div class="page-banner flex-align-justify-center" style="background-image: url(<?php the_post_thumbnail_url(); ?>);">
+  <div class="title">
+    <h1><?php echo the_title(); ?></h1>
+  </div>
+</div>
+
  <div class="container pt">
 
   <div class="row mt">
@@ -45,7 +51,7 @@
     <?php if ( $loop ) : 
     while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
-    <div class="col-lg-4">
+    <div class="col-md-4">
      <?php if ( has_post_thumbnail()) : ?>
      <a class="zoom green" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
       <?php the_post_thumbnail(); ?>
