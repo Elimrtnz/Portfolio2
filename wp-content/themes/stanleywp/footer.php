@@ -22,6 +22,7 @@
 
   <!-- +++++ Footer Section +++++ -->
   <footer id="footer">
+    <a class="back-to-top" href="javascript:void(0);"></a>
   	<div class="container">
   		<div class="row">
   			<div class="col-xs-12">
