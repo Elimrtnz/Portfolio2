@@ -27,7 +27,7 @@
   		<div class="row">
   			<div class="col-xs-12">
   				<div class="icon">
-  					<a href="https://www.linkedin.com/in/EliasMartinezDev"><i class="fa fa-linkedin-square"></i></a>
+  					<a href="https://www.linkedin.com/in/EliasMartinezDev" target="_blank"><i class="fa fa-linkedin-square"></i></a>
   				</div>
   				<div class="icon">
   					<a href="mailto:eliasmartinez.dev@gmail.com"><i class="fa fa-google"></i></a>
