@@ -34,7 +34,7 @@
       <div class="row pt">
         <div class="flex-container">
           <div class="col-xs-12 col-md-6">
-            <img src="<?php echo $sectionOneImage['url']; ?>">
+            <a data-fancybox="gallery" href="<?php echo $sectionOneImage['url']; ?>"><img src="<?php echo $sectionOneImage['url']; ?>"></a>
           </div>
           <div class="col-xs-12 col-md-6">
             <div class="section-content">
@@ -51,7 +51,7 @@
       <div class="row">
        <div class="flex-container-two">
         <div class="col-xs-12 col-md-6">
-          <img src="<?php echo $sectionTwoImage['url']; ?>">
+          <a data-fancybox="gallery" href="<?php echo $sectionTwoImage['url']; ?>"><img src="<?php echo $sectionTwoImage['url']; ?>"></a>
         </div>
         <div class="col-xs-12 col-md-6">
           <div class="section-content">
