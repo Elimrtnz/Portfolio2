@@ -83,8 +83,8 @@ jQuery(document).ready(function() {
 
   if ( jQuery('.slickslider').length) {
         jQuery('.slickslider ul.slides').slick({
-          //autoplay: true,
-          //autoplaySpeed: 2000,
+          autoplay: true,
+          autoplaySpeed: 4000,
           arrows: false,
           dots: true,
         });
