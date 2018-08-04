@@ -46,6 +46,25 @@
 </div>
 
 
+<?php //save newsletter code below ?>
+ <?php $newsImage = get_field('newsletter_image'); ?>
+  <div class="news-background flexbox align-items-center" style="background-image: url( <?php echo $newsImage['url']; ?>); background-size: cover;">
+  	<div class="overlay"></div>
+  	<div class="container newsletter">
+  		<div class="row ">
+  			<div class="col-xs-12 ">
+  				<h3><?php the_field('newsletter_title'); ?></h3>
+  				<div class="content">
+  					<?php the_field('newsletter_content'); ?>
+  				</div>
+  				<div class="code">
+  					<?php the_field('news_code'); ?>
+  				</div>
+  			</div><!-- /col -->
+  		</div><!-- /row -->
+  	</div> <!-- /container -->
+  </div>
+
 
 
 

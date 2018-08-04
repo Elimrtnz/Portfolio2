@@ -175,8 +175,8 @@ hr {
 
 #ww { 
     background-color: #f2f2f2; 
-    padding-bottom: 25px; 
-    padding-top: 25px; 
+    /*padding-bottom: 25px; */
+    padding-top: 25px;
 }
 
 #footer { 
@@ -672,6 +672,15 @@ body.compensate-for-scrollbar{overflow:hidden}.fancybox-active{height:auto}.fanc
     }
 
 }
+
+/*Contact Section */
+.contact-home-container {
+    background-color: #333333;
+}
+.contact-content .content p {
+    color: #ffffff;
+}
+
 
 /* Contact Page */
 .contact-page {

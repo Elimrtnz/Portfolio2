@@ -95,31 +95,42 @@
   				</div>
   			</div><!-- /col -->
 
-
   		</div><!-- /row -->
-
-
-
   	</div> <!-- /container -->
+
+    <?php 
+      $contactId = get_page_by_path('contact');
+    ?>
+    <div class="contact-home-container">
+    <div class="container contact-content">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2 class="marker"><?php the_field('heading',$contactId); ?></h2>
+        <div class="content">
+          <?php the_field('content',$contactId); ?>
+        </div>
+      </div>
+    </div><!-- /row -->
+  </div> <!-- /container -->
+
+  <div class="container contact-form">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="content">
+          <?php the_field('form',$contactId); ?>
+        </div>
+      </div>
+    </div><!-- /row -->
+  </div> <!-- /container -->
+
+  </div>
+
+
+
+
   </div><!-- /ww -->
 
-  <?php $newsIimage = get_field('newsletter_image'); ?>
-  <div class="news-background flexbox align-items-center" style="background-image: url( <?php echo $newsIimage['url']; ?>); background-size: cover;">
-  	<div class="overlay"></div>
-  	<div class="container newsletter">
-  		<div class="row ">
-  			<div class="col-xs-12 ">
-  				<h3><?php the_field('newsletter_title'); ?></h3>
-  				<div class="content">
-  					<?php the_field('newsletter_content'); ?>
-  				</div>
-  				<div class="code">
-  					<?php the_field('news_code'); ?>
-  				</div>
-  			</div><!-- /col -->
-  		</div><!-- /row -->
-  	</div> <!-- /container -->
-  </div>
+ 
 
 
 <?php get_footer(); ?>
