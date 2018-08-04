@@ -46,7 +46,7 @@
 </div>
 
 
-<?php //save newsletter code below ?>
+<?php /*save newsletter code below
  <?php $newsImage = get_field('newsletter_image'); ?>
   <div class="news-background flexbox align-items-center" style="background-image: url( <?php echo $newsImage['url']; ?>); background-size: cover;">
   	<div class="overlay"></div>
@@ -64,6 +64,8 @@
   		</div><!-- /row -->
   	</div> <!-- /container -->
   </div>
+
+  */ ?>
 
 
 
